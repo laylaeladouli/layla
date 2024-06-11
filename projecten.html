@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layla El Adouli</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><strong>Layla</strong></a>
+        <button
+          class="navbar-toggler navbar-light bg-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobby.html">Vrije Tijd</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projecten.html">Mijn projecten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Werkplek.html">Werkplek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container mt-5">
+        <h1 class="h1-projecten">Mijn projecten.</h1>
+
+        <div class="row">
+          <div class="col-md-6 mb-4 jutify-content-center">
+            <div class="card">
+              <figure class="card-img">
+                <img src="portfolio-grid.png" alt="Card Image" />
+              </figure>
+              <div class="card-content">
+                <h5 class="card-title">Project 1</h5>
+                <p>
+                  Dit was een van mijn eerste portfolio met grid. Als u
+                  geintetesserd bent in de code, kunt u hier klikken.
+                </p>
+                <a
+                  href="https://github.com/laylaeladouli/mywebsite-with-grid"
+                  class="card-btn"
+                  >klik hier</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <figure class="card-img">
+                <img src="thema-img.png" alt="Card Image" />
+              </figure>
+              <div class="card-content">
+                <h5 class="card-title">Project 2</h5>
+                <p>
+                  Dit is mijn tweede project, een eenvoudige themasite met een
+                  aantal trationele Marokkaanse zoetigheden.
+                </p>
+                <a href="project2.html" class="card-btn">klik hier</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <figure class="card-img">
+                <img src="portfolio.png" alt="Card Image" />
+              </figure>
+              <div class="card-content">
+                <h5 class="card-title">Project 3</h5>
+                <p>
+                  Wat dit project betreft, het is een nieuwe versie van mijn
+                  portfolio, de site die u momenteel bekijkt. Onze leraar vroeg
+                  ons om ons portfolio opnieuw te ontwerpen om onze vooruitgang
+                  aan het einde van het schooljaar te volgen.
+                </p>
+                <a
+                  href="https://github.com/laylaeladouli/mywebsite-with-grid"
+                  class="card-btn"
+                  >klik hier</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <figure class="card-img">
+                <img src="advanced-img.png" alt="Card Image" />
+              </figure>
+              <div class="card-content">
+                <h5 class="card-title">Project 4</h5>
+                <p>
+                  Dit project is een webapplicatie die we mochten maken als
+                  project voor onze cursus Advanced Programming Techniqies,
+                  naast de HTML, CSS, en bootstrap die ik van Spring boot
+                  gebruik. Klik hier voor meer details.
+                </p>
+                <a href="project4.html" class="card-btn">klik hier</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="row-footer">
+      <div class="col-12 text-center">
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/layla-el-adouli-3571b2302/?trk=opento_sprofile_details"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/laylaeladouli"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <samp
+          >my portfolio <br />
+          &copy; 2024 by layla El Adouli</samp
+        >
+      </div>
+    </footer>
+
+    <script>
+      // This script toggles the visibility of the element with the id el
+
+      function toggle(el) {
+        var hide = document.getElementById(el);
+        if (hide.style.display === "block") {
+          hide.style.display = "none";
+        } else {
+          hide.style.display = "block";
+        }
+      }
+
+      // Luister naar schermgrootte veranderingen
+      window.onresize = function () {
+        var hide = document.getElementById("myLinks");
+        if (window.innerWidth >= 760) {
+          hide.style.display = "block"; // Zorg ervoor dat de links worden getoond op grotere schermen
+        } else {
+          hide.style.display = "none"; // Verberg links op kleinere schermen
+        }
+      };
+    </script>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

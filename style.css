@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+/*----------------------index page----------------------*/
+
+.container-index {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+}
+.content h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    padding: 5px 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.background-video {
+    position: absolute;
+    right: O;
+    bottom: O;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .background-video{
+        width: 100%;
+        height: auto;
+    }
+} 
+
+@media (max-aspect-ratio: 16/9){
+    .background-video{
+        width: auto;
+        height: 100%;
+    }
+} 
+    
+
+
+/*----------------------nav style--------------------*/
+
+.navbar {
+ border: 1px solid #FFCAD4;
+ background-color: #FFCAD4;
+ 
+}
+ .nav-item {
+      display: inline-block;
+}
+
+.navbar a {
+    color: #333;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------- home page ----------------------------- */
+
+.container-home {
+    margin: 42px 40px 130px 40px;
+}
+
+.imghome-fluid {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.h2-home {
+    font-size: 2.1rem;
+    line-height: 1.4;
+}
+.container-home p,
+h4 {
+    text-align: left;
+}
+
+
+
+
+/* ------------------ formulier styles------------------------*/
+
+.contact-formulier {
+  margin-top: 20px ;
+  margin-bottom: 120px;
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  background-color: #d8d6d7;
+}
+.submit {
+    margin-top: 30px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form textarea {
+      min-height: 150px;
+}
+
+.submit {
+margin-top: 10px;
+}
+.submit:hover {
+    background-color: #333333;
+    color: #fff;
+}
+.h1 {
+     font-size: 2.1rem;
+    line-height: 1.4;
+    margin-top: 35px;
+}
+
+
+
+/*-------------- my hobby page --------------------*/
+
+
+.h1-hobby {
+    font-size: 2.1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.maindiv1 {
+    width: 50%;
+    height: 310px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("halawiyat1.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px rgba(82, 48, 19, 0.3);
+    animation: slider1 9s infinite linear;
+}
+
+@keyframes slider1 {
+    0% { background-image: url("halawiyat1.jpg");}
+    25% { background-image: url("halawiyat2.jpg");}
+    50% { background-image: url("halawiyat3.jpg");}
+    75% { background-image: url("halawiyat4.jpg");}
+}
+
+
+.maindiv2{
+    width: 50%;
+    height: 310px;
+    margin-top: 830px;
+    margin-bottom: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("momalahat1.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px rgba(82, 48, 19, 0.3);
+    animation: slider2 9s infinite linear;
+}
+
+@keyframes slider2 {
+    0% { background-image: url("momalahat1.jpg");}
+    25% { background-image: url("momalahat2.jpg");}
+    50% { background-image: url("momalahat3.jpg");}
+    75% { background-image: url("momalahat4.jpg");}
+}
+
+.home-content {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 440px 100px 20px 100px;
+}
+
+.home-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.home-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 75px;
+}
+
+
+/*--------------------projecten page-------------------------*/
+
+.row {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.h1-projecten {
+    font-size: 2.1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.card {
+  width: 350px;
+  background-color: #fde8ed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin: 25px 10px;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid #fde8ed; 
+}
+.card-img {
+  margin: 10px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 230px; 
+  width: 340px;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+}
+.card-btn:hover {
+  color: #cc5490;
+  font-weight: 700;
+}
+
+                /*projecten- details*/
+.content-2 {
+    margin-bottom: 120px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+
+/*------------------------werkplak-----------------------*/
+
+.figwerkplek{
+  margin: 40px;
+  text-align: center;
+  margin-bottom: 120px;
+
+}
+.figwerkplek img{
+  height: 200px;
+  width: 300px;
+}
+
+.container-werkplek p{
+    margin: 50px;
+    margin-bottom: 90px;
+}
+
+.h1-werkplek {
+    font-size: 2.1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+ /*------------------footer----------------------------*/
+
+ .row-footer {
+    border: 1px solid #7A5C58;
+    background-color: #7A5C58;
+    color: black;
+    height: 75px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin: 0 15px;
+    color: #000104;
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layla El Adouli</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><strong>Layla</strong></a>
+        <button
+          class="navbar-toggler navbar-light bg-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobby.html">Vrije Tijd</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projecten.html">Mijn projecten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Werkplek.html">Werkplek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content-2 mt-5">
+      <h1 class="my-4">Website : winkel voor computers en accessoires</h1>
+
+      <h4 class="my-4">Projectbeschrijving :</h4>
+      <p>
+        Ik heb deze website gemaakt om een ​​online winkel te bieden voor het
+        kopen van computers en accessoires. Mijn doel is altijd geweest om een
+        ​​gebruiksvriendelijk platform te creëren en te ontwikkelen waar
+        gebruikers eenvoudig de nieuwste computers en accessoires kunnen
+        bekijken, selecteren en kopen.
+      </p>
+      <h4 class="my-4">Gebruikte technologieën :</h4>
+      <p>
+        <strong>Frontend</strong> : ontwikkeld met behulp van HTML, CSS en
+        Bootstrap voor een responsief en visueel aantrekkelijk ontwerp. Het
+        rastersysteem en de componenten van Bootstrap zorgen voor een soepele en
+        consistente lay-out op alle apparaten.
+      </p>
+      <p>
+        <strong>Backend</strong> : gebouwd met Spring Boot voor krachtige
+        verwerking aan de serverzijde. Spring Boot biedt een schaalbare en
+        onderhoudbare backend-architectuur.
+      </p>
+      <p>
+        <strong>Database</strong> : Ik gebruikte SQL om gegevens te beheren,
+        waardoor productinformatie, gebruikersgegevens en transactierecords
+        efficiënt konden worden opgehaald en opgeslagen.
+      </p>
+      <p>
+        <strong>Afbeeldingen</strong> : Ik heb de productafbeeldingen van Amazon
+        gehaald, waardoor afbeeldingen van hoge kwaliteit voor de website zijn
+        gegarandeerd.
+      </p>
+      <h4 class="my-4">Doel :</h4>
+      <p>
+        Door deze technologieën en technieken te integreren, wilde ik een
+        betrouwbare, veilige en gebruiksvriendelijke online winkel creëren die
+        voldoet aan de behoeften van zowel technologieliefhebbers als gewone
+        consumenten.
+      </p>
+      <h4 class="my-4">documenten die hoorden bij het project :</h4>
+      <a href="analyse eigen project.docx" class="#"
+        >Analyse eigen project link</a
+      ><br />
+      <a href="https://laptop-web-53b7k54coq-ew.a.run.app/home" class="#"
+        >Website link</a
+      >
+    </div>
+
+    <div class="row-footer">
+      <div class="col-12 text-center">
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/layla-el-adouli-3571b2302/?trk=opento_sprofile_details"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/laylaeladouli"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <samp>my portfolio <br />&copy; 2024 by layla El Adouli</samp>
+      </div>
+    </div>
+    <script>
+      // This script toggles the visibility of the element with the id el
+
+      function toggle(el) {
+        var hide = document.getElementById(el);
+        if (hide.style.display === "block") {
+          hide.style.display = "none";
+        } else {
+          hide.style.display = "block";
+        }
+      }
+
+      // Luister naar schermgrootte veranderingen
+      window.onresize = function () {
+        var hide = document.getElementById("myLinks");
+        if (window.innerWidth >= 760) {
+          hide.style.display = "block"; // Zorg ervoor dat de links worden getoond op grotere schermen
+        } else {
+          hide.style.display = "none"; // Verberg links op kleinere schermen
+        }
+      };
+    </script>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

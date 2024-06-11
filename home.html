@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layla El Adouli</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><strong>Layla</strong></a>
+        <button
+          class="navbar-toggler navbar-light bg-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobby.html">Vrije Tijd</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projecten.html">Mijn projecten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Werkplek.html">Werkplek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+     <div class="container-home">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="myphoto.png" class="img-fluid imghome-fluid" alt="my photo" />
+            </div>
+            <div class="col-md-8">
+                <h2 class="h2-home">Wie ben ik?</h2>
+                <p>Welkom allemaal. Ik ben Layla El Adouli, ik kom uit Marokko. Ik woon nu in België en dit is mijn eerst jaar aan <a href="http://www.thomasmore.be"><strong>Thomas More Hogeschool</strong></a>.</p>
+                <p>Nadat ik mijn middelbare school had afgerond, besloot ik netwerken te gaan studeren. Na twee jaar kreeg ik het Technicus Diploma gespecialiseerd in netwerken en IT systemen.</p>
+                <p>Nadat ik was afgestudeerd, besloot ik van mijn favoriete hobby een baan en een hobby tegelijk te maken. Daarom werkte ik als bakker, gespecialiseerd in het maken van traditionele Marokkaanse zoetigheden.</p>
+                <p>Ik ben altijd gefascineerd geweest door de wereld van Webdesign. Dus besloot ik terug te keren naar de klas om deze droom te verwezenlijken. Nu volg ik de richting graduaat programmeren aan Thomas More.</p>
+                <p>Gedurende dit jaar heb ik verschillende vaardigheden kunnen verwerven, waaronder: SQL - HTML - CSS - Bootstrap - grid - Java - Spring Boot - JavaScript.</p>
+                <p>Ik hoop tegen het einde van deze richting een bekwaam programmeur te zijn.</p>
+                <h4 >Naar CV:</h4>
+                <p>Hier vindt u mijn <a href="CV.pdf"><strong>CV</strong></a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-footer">
+      <div class="col-12 mb-2 mt-1 text-center">
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/layla-el-adouli-3571b2302/?trk=opento_sprofile_details"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+           <a
+            href="https://github.com/laylaeladouli"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <samp
+          >my portfolio <br />
+          &copy; 2024 by layla El Adouli</samp
+        >
+      </div>
+    </div>
+
+    <script>
+      // This script toggles the visibility of the element with the id el
+      function toggle(el) {
+        var hide = document.getElementById(el);
+        if (hide.style.display === "block") {
+          hide.style.display = "none";
+        } else {
+          hide.style.display = "block";
+        }
+      }
+
+      // Luister naar schermgrootte veranderingen
+      window.onresize = function () {
+        var hide = document.getElementById("myLinks");
+        if (window.innerWidth >= 760) {
+          hide.style.display = "block"; // Zorg ervoor dat de links worden getoond op grotere schermen
+        } else {
+          hide.style.display = "none"; // Verberg links op kleinere schermen
+        }
+      };
+    </script>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
